@@ -33,4 +33,31 @@ A Flask-powered RESTful API (`app.py`) is developed to expose the climate data t
 - **Temperature Summary by Date Range (`/api/v1.0/<start>/<end>`)**: Returns min, avg, and max temperatures for a given date range.
 
 ---
+## Steps
+
+### Part 1: Climate Data Analysis
+1. **Setup**:
+   - Connect to the `hawaii.sqlite` database using SQLAlchemy.
+   - Reflect the database tables and link them to Python using SQLAlchemy ORM.
+
+2. **Precipitation Analysis**:
+   - Retrieve and analyze the last 12 months of precipitation data.
+   - Visualize the data and compute summary statistics.
+
+3. **Station Analysis**:
+   - Query station details and identify the most active station.
+   - Analyze temperature observations (TOBS) for the most active station.
+   - Visualize TOBS data as a histogram.
+
+4. **Cleanup**:
+   - Close the SQLAlchemy session.
+
+### Part 2: Climate Data API
+1. Develop a Flask application (`app.py`) to expose climate data through various endpoints.
+2. Use SQLAlchemy ORM queries to fetch data dynamically.
+3. Test the API locally using the provided routes.
+
+---
+
+
 
